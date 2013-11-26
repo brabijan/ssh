@@ -3,9 +3,8 @@
 namespace Brabijan\SSH;
 
 use Brabijan\SSH\Authenticator\IAuthenticator;
-use Nette;
 
-class Connection extends Nette\Object
+class Connection
 {
 
 	/** @var string */

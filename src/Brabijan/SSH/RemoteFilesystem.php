@@ -2,9 +2,7 @@
 
 namespace Brabijan\SSH;
 
-use Nette;
-
-class RemoteFilesystem extends Nette\Object
+class RemoteFilesystem
 {
 
 

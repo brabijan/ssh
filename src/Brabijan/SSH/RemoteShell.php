@@ -2,9 +2,7 @@
 
 namespace Brabijan\SSH;
 
-use Nette;
-
-class RemoteShell extends Nette\Object
+class RemoteShell
 {
 
 	/** @var \Brabijan\SSH\Connection */

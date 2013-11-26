@@ -2,9 +2,7 @@
 
 namespace Brabijan\SSH\Authenticator;
 
-use Nette;
-
-class PublicKey extends Nette\Object implements IAuthenticator
+class PublicKey implements IAuthenticator
 {
 
 	/** @var string */
