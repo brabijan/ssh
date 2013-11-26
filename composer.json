@@ -1,0 +1,24 @@
+{
+	"name": "brabijan/ssh",
+	"type": "library",
+	"description": "SSH wrapper for PHP",
+	"keywords": ["ssh"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Jan Brabec"
+		}
+	],
+	"support": {
+		"email": "brabijan@gmail.com",
+		"issues": "https://github.com/brabijan/ssh/issues"
+	},
+	"require": {
+		"ext-ssh2": "*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Brabijan\\": "src/"
+		}
+	}
+}
