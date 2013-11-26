@@ -117,9 +117,9 @@ class Connection
 
 	private function closeConnection()
 	{
-		unset($this->connection);
-		unset($this->remoteShell);
-		unset($this->remoteFilesystem);
+		$this->connection = null;
+		$this->remoteShell = null;
+		$this->remoteFilesystem = null;
 	}
 
 }
