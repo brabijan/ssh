@@ -22,11 +22,14 @@ class Password implements IAuthenticator
 
 
 	/**
-	 * @param $resource
+	 * @param resource $resource
+	 * @throws \Exception
 	 */
 	public function authenticate($resource)
 	{
-		return ssh2_auth_password($resource, $this->username, $this->password);
+		if (!@ssh2_auth_password($resource, $this->username, $this->password)) { // @ prevent warning, on invalid authentication throws exception
+			throw new \Exception("Authentication failed for user '{$this->username}' using public key: Username/Password combination invalid");
+		}
 	}
 
 }
